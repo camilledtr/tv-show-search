@@ -13,6 +13,9 @@ form.addEventListener("input", async (e) => {
         const div = document.createElement("div");
         const img = document.createElement("img");
         const descr = document.createElement("p");
+        const addToWatchingList = document.createElement("button");
+        addToWatchingList.diplay = "block";
+        addToWatchingList.innerText = "+";
 
         if (res.data[i].show.image) {
             img.src = res.data[i].show.image.medium;
@@ -28,6 +31,8 @@ form.addEventListener("input", async (e) => {
         contain.append(div);
         div.append(img);
         div.append(descr);
+        div.append(addToWatchingList);
+
     }
 
 })

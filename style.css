@@ -22,7 +22,6 @@ button {
     background-color: rgb(23, 182, 23);
     border: none;
     border-radius: 5px;
-
 }
 
 button:hover {
@@ -44,6 +43,7 @@ button:focus {
     border-radius: 10px;
     background-color: #f0f0f0;
     padding: 15px;
+    text-align: center;
 }
 
 img {
@@ -55,4 +55,8 @@ img {
 p {
     text-align: center;
     width: 210px;
+}
+
+.container div>button {
+    background-color: grey;
 }
